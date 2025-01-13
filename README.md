@@ -1,5 +1,4 @@
-# laravel-docker-template
-This docker setup assumes you already have a laravel project, and these files needs to be on the root if your laravel project. It uses PHP-FPM and Nginx
+# Starter Template for Dockerize Laravel
 
 # Requirements
 1. Docker
