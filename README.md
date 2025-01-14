@@ -2,40 +2,18 @@
 
 # Requirements
 1. Docker
-2. Make
 
 # Getting Started.
 1. Clone the latest laravel ``git clone https://github.com/laravel/laravel.git . ``
-2. Rename or Copy .env.example to .env ``mv .env.example .env``
-3. Fill in the .env
-   > DB_CONNECTION=mysql
-   > 
-   > DB_HOST=database
-   >
-   > DB_PORT=3306
-   >
-   > DB_DATABASE=laravel
-   >
-   > DB_USERNAME=laravel_user
-   >
-   > DB_PASSWORD=laravel_password
-   >
-
-4. Clone this repository and copy the contents to the project directory
-5. Install composer dependencies
-     ``docker compose run --rm app composer install``
-6. In the terminal run: ``make up``
-7. Open a new terminal, and then type ``make generate``
-9. On the same terminal type: ``make optimize``
-10. Finally open your browser to ``http://localhost``
-
-# Make Commands
-1. `` make stop `` set docker to stop
-2. `` make up `` set docker to up
-3. `` make generate `` php artisan key:generate
-4. `` make optimize `` php artisan optimize
-5. `` make build `` rebuilds the docker container
-6. `` make down `` stops and removes the containers, networks and volumes
+2. Open it in a code editor and on a terminal run `` composer install ``.
+3. After run `` docker compose up --build ``.
+4. Then run `` docker compose exec -it app sh ``.
+5. Change directory like this `` cd docker/nginx/ssl/ ``.
+6. Then create a SSL cert by running this command ``openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout self-signed.key -out self-signed.crt `` and then following the prompts.
+7. Change directory to `` cd /var/www ``.
+8. Then run your migration like so `` php artisan migrate ``.
+9. After all that you can visit your dockerize laravel application at `` localhost `` on your browser.
+10. Phpmyadmin is located at `` localhost:8080``.
 
 # Contributing
 Pull this repository add your changes.
