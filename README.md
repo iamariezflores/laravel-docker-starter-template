@@ -1,8 +1,8 @@
 # Starter Template for Dockerize Laravel
-Use this template to quickly have a dockerize laravel application you can use for development. 
+Use this starter template to quickly have a dockerize laravel application you can use for development. It uses nginx for webserver, mysql for database, redis for your caching needs and phpmyadmin as a database viewer. 
 
 # Requirements
-1. Docker
+1. Must have installed docker into your system. 
 
 # Getting Started.
 1. Clone the latest laravel ``git clone https://github.com/laravel/laravel.git . ``
