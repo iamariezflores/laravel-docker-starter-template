@@ -1,6 +1,8 @@
 # Starter Template for Dockerize Laravel
 Use this starter template to quickly have a dockerize laravel application you can use for development. It uses nginx for webserver, mysql for database, redis for your caching needs and phpmyadmin as a database viewer. 
 
+Currently includes Laravel 11x.
+
 # Requirements
 1. Must have installed docker into your system. 
 
