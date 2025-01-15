@@ -1,4 +1,5 @@
 # Starter Template for Dockerize Laravel
+Use this template to quickly have a dockerize laravel application you can use for development. 
 
 # Requirements
 1. Docker
@@ -14,6 +15,10 @@
 8. Then run your migration like so `` php artisan migrate ``.
 9. After all that you can visit your dockerize laravel application at `` localhost `` on your browser.
 10. Phpmyadmin is located at `` localhost:8080``.
+
+# Additional Notes
+1. You can go to `` .env `` and change variable relating to database to customize it for your use case.
+2. Phpmyadmin will pull its username and password via .env variables.
 
 # Contributing
 Pull this repository add your changes.
