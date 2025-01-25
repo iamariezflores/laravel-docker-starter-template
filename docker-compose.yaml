@@ -19,6 +19,7 @@ services:
     volumes:
       - ./:/var/www
       - ~/.ssh:/root/.ssh
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     depends_on:
       - db
       - redis  
