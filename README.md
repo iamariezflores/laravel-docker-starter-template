@@ -26,6 +26,7 @@ Currently includes Laravel 11x.
 1. You can go to `` .env `` and change variable relating to database to customize it for your use case.
 2. Build your css using ``npm run build ``.
 3. Phpmyadmin will pull its username and password via .env variables.
+4. There is a php.ini file in the directory `` docker/php/php.ini `` modify this file for your needs and build the docker image again.
 
 # Contributing
 Pull this repository add your changes.
